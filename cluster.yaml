@@ -2,7 +2,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: <SET YOUR OWN CLUSTER NAME HERE e.g. jazeel-eks-cluster>
+  name: wjlim-eks-cluster>
   region: ap-southeast-1
 
 vpc:
@@ -13,7 +13,7 @@ vpc:
       ap-southeast-1c: { id: subnet-024373a5351a4af15 }
 
 nodeGroups:
-  - name: <SET YOUR WORKER NODE GROUP NAME HERE. e.g. jazeel-worker-ng>
+  - name: wjlim-worker-ng
     labels: { role: workers }
     instanceType: t3.small
     desiredCapacity: 1
